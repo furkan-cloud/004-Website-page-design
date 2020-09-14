@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 16px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #35424a;
+    border-bottom: 3px solid #A9508B;
+   
+}
+
+.header-container{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 6rem;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+
+}
+
+span{
+    color:#A9508B ;
+}
+
+ul li {
+    color: white;
+    display: inline;
+    list-style-type: none;
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+   
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+#about{
+    color:#A9508B;
+    font-weight: bold;
+}
+
+h1, h1 span{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+
+#home:hover,#services:hover,#about:hover{
+    font-weight: bold;
+    cursor: pointer;
+    color: #cccccc;
+}
+
+.section-subscribe{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 6rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #35424a; 
+    flex-wrap: wrap;
+    /* margin-bottom: 50px; */
+    
+
+}
+.section-subscribe h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+#placeholder{
+    font-size:0.8rem;
+    /* padding: 0.4rem 0;   */
+    width: 260px;
+    height: 40px ;
+}
+
+button{
+    background-color: #A9508B;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border: none;
+    width: 100px ;
+    height: 40px;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50vh;
+}
+.section-first{
+    margin-top: 3vh;
+    font-size: 15px;
+    width: 52vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 3vw 2vh 8vw;
+    line-height: 1.4rem;
+}
+.section-first h3{
+    margin-bottom: 3vh;
+}
+#dark{
+    background-color: #35424a;
+    color: white;
+    margin-top: 2vh;
+    padding: 3vh 1vw;
+}
+.section-second{
+    font-size: 15px;
+    align-self: flex-start;
+    width: 24vw;
+    height: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-top: 3vh;
+    background-color: #35424a;
+    color: white;
+    padding: 3vh 1vw 5vh;
+    margin-right: 8vw;
+    line-height: 1.4rem;
+}
+.section-second h3{
+    margin-bottom: 3vh;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #A9508B;
+    height: 8rem ;
+    background-color: rgb(255,250,240)
+     ;
+}
+
+footer p{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+}
