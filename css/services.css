@@ -9,7 +9,7 @@
 header{
     background-color: #35424a;
     border-bottom: 3px solid #A9508B;
-
+   
 }
 
 .header-container{
@@ -19,6 +19,9 @@ header{
     height: 6rem;
     justify-content: space-around;
     align-items: center;
+   
+    
+
 }
 
 span{
@@ -32,11 +35,16 @@ ul li {
     padding: 1rem;
     line-height: 1.5rem;
     font-weight: 500;
+   
 }
 
 a{
     color: white;
     text-decoration: none;
+}
+#about{
+    color:#A9508B;
+    font-weight: bold;
 }
 
 h1, h1 span{
@@ -45,26 +53,26 @@ h1, h1 span{
     line-height: 2.8rem;
 }
 
-nav ul li a:hover{
+#home:hover,#services:hover,#about:hover{
     font-weight: bold;
     cursor: pointer;
     color: #cccccc;
 }
 
-
 .section-subscribe{
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        height: 6rem;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #35424a; 
-        flex-wrap: wrap;
-        /* margin-bottom: 50px; */
-}
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 6rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #35424a; 
+    flex-wrap: wrap;
+    /* margin-bottom: 50px; */
+    
 
-h3{
+}
+.section-subscribe h3{
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 2rem;
@@ -80,92 +88,67 @@ h3{
 button{
     background-color: #A9508B;
     color: white;
-    padding: 0.5rem;
+    padding: 0.8rem;
     font-size: 0.8rem;
     border: none;
-    width: 100px ;
-    height: 40px;
+    /* width: 100px ;
+    height: 40px; */
 }
 
-main{
+.main__services {
     display:flex;
-    background:#F4F4F4;
+    justify-content: space-evenly;
 }
 
-.quote {
-    display:flex;
-    flex-direction: column;
-    background-color: #35424a;
-    color: white;
-    align-self:flex-start;
-    padding: 3vh 2vw 2vh 1vw;
-    margin-top: 3vh;
-    line-height: 3vh;
-    width: 23vw;
-    font-size: 15px;
-    /* align-content: space-between; */
+
+.section__services {
+    margin-bottom: 2vh;
+    margin-left: 7vw;
 }
 
-.quote h4 {
-    margin: 2vh 0;
-    font-size: 18px;
+
+
+
+
+.section__services--header {
+    padding: 2vh 0;
 }
 
-#Name, #Email {
-    height: 4.5vh;
-    padding-left: 0.4vw;
+.section__services--box {
+    background-color:#E6E6E6;
+    margin-bottom: 0.8vh;
+    padding: 2vh 1vw;
+    width: 54vw;
+    border: 1px solid #ccc;
 }
 
-#message {
-    padding-left: 0.5vw;
-    padding-top: 0.5vh;
+.section__services--box p {
+    font-size: 0.9rem;
 }
 
-#send {
-    width: 4.5vw;
-    margin-top: 1vh;
-    padding: 1.2vh 1vw;
-    color: white;
-    background-color: #A9508B;
-}
+
+
 
 .website {
-    background-color: #E6E6E6;
-    width: 51.5vw;
-    font-size: 15px;
-    display:flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* justify-content: flex-start; */
-    margin: 0 3vw 0.7vh 10vw;
-    padding: 1.7vh 1.3vw 5vh;
+    /* height:8vh; */
+    padding: 2vh 0;
+}
+
+.section__quote {
+    background-color: #35424a;
     align-self: flex-start;
-    /* justify-content: space-between; */
-    /* height: 27vh; */
-    height:auto;
-    border: 0.07rem lightgray solid;
-    /* letter-spacing: 0.25px; */
-    line-height: 22px;
-}
-.website h4{
-    margin: 1.25rem 0;
-    font-size: 1.1rem;
-    /* font-weight: 700; */
-    line-height: 1.6rem;
-} 
-
-/* .website p {
-    color: #c4c4c4;
-} */
-
-.web__maint {
-    margin-bottom: 3vh;
+    width: 20vw;
+    padding: 2vh 1vw;
+    margin: 2vh 7vw 0 0;
 }
 
-#services {
-    margin: 2vh 0 2vh 10vw;
-    font-size: 18px;
-}
+
+
+
+
+
+
+
 
 footer{
     display: flex;
@@ -181,16 +164,4 @@ footer p{
     font-size: 0.9rem;
     line-height: 1.4rem;
     font-weight: 400;
-}
-
-
-@media (max-width: 768px){
-    .section-course{
-       display: flex;
-       flex-direction: column;
-    }
-
-    .css{
-        margin: 1.5rem;
-    }
 }
