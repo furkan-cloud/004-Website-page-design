@@ -9,7 +9,6 @@
 header{
     background-color: #35424a;
     border-bottom: 3px solid #A9508B;
-   
 }
 
 .header-container{
@@ -17,11 +16,9 @@ header{
     display: flex;
     flex-wrap: wrap;
     height: 6rem;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-   
-    
-
+    margin: 0 10vw;
 }
 
 span{
@@ -35,7 +32,6 @@ ul li {
     padding: 1rem;
     line-height: 1.5rem;
     font-weight: 500;
-   
 }
 
 a{
@@ -64,13 +60,12 @@ h1, h1 span{
     display: flex;
     flex-wrap: wrap;
     height: 6rem;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 11vw;
     align-items: center;
     background-color: #35424a; 
     flex-wrap: wrap;
     /* margin-bottom: 50px; */
-    
-
 }
 .section-subscribe h3{
     font-size: 1.4rem;
@@ -98,12 +93,16 @@ button{
 main{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50vh;
+    padding-bottom: 50vh;
+    background:#F4F4F4;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* margin: 0 10vw; */
 }
 .section-first{
     margin-top: 3vh;
     font-size: 15px;
-    width: 52vw;
+    width: 51vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -122,7 +121,7 @@ main{
 .section-second{
     font-size: 15px;
     align-self: flex-start;
-    width: 24vw;
+    width: 22vw;
     height: auto;
     /* display: flex; */
     /* flex-direction: column; */
@@ -143,8 +142,7 @@ footer{
     align-items: center;
     border-top: 3px solid #A9508B;
     height: 8rem ;
-    background-color: rgb(255,250,240)
-     ;
+    background-color: rgb(255,250,240);
 }
 
 footer p{
@@ -152,3 +150,56 @@ footer p{
     line-height: 1.4rem;
     font-weight: 400;
 }
+
+
+@media (max-width: 768px){
+    .header-container {
+        height: 11rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 0;
+        /* margin: 0 7vw; */
+      }
+    
+      .header-right, .header-left {
+        margin: 0 3vw;
+      }
+
+    .section-subscribe{
+        height: 11rem;
+    }
+
+    main{
+       display: flex;
+       flex-direction: column;
+       padding-bottom: 10vh;
+    }
+
+    .section-first{
+        width: 80vw;
+        margin: 2vh 3vw 2vh 10vw;
+        /* padding: 0 2vw; */
+    }
+    .section-second{
+        width: 80vw;
+        margin: 3vh 3vw 3vh 10vw;
+        padding: 3vh 2vw 5vh;
+    }
+    #dark{
+        padding: 3vh 2vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .header-container {
+      font-size: 15px;
+      /* margin: 0 7vw; */
+    }
+    h1,
+    h1 span {
+      font-size: 1.6rem;
+      /* font-weight: 700;
+          line-height: 2.8rem; */
+    }
+  }
